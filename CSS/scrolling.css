@@ -52,6 +52,260 @@ section > div {
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
+@-webkit-keyframes breathing {
+  0% {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+  }
+  25% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  60% {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+  }
+  100% {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+  }
+}
+
+@keyframes breathing {
+  0% {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+  }
+  25% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  60% {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+  }
+  100% {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+  }
+}
+
+@-webkit-keyframes BounceInLeft {
+  0% {
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    opacity: 1;
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    -webkit-transform: translateX(-26px);
+            transform: translateX(-26px);
+  }
+  65% {
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    -webkit-transform: translateX(-13px);
+            transform: translateX(-13px);
+  }
+  82% {
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    -webkit-transform: translateX(-6.5px);
+            transform: translateX(-6.5px);
+  }
+  93% {
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    -webkit-transform: translateX(-4px);
+            transform: translateX(-4px);
+  }
+  25%,
+  55%,
+  75%,
+  87%,
+  98% {
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    -webkit-transform: translateX(15px);
+            transform: translateX(15px);
+  }
+  100% {
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    opacity: 1;
+    -webkit-transform: translateX(7.5px);
+            transform: translateX(7.5px);
+  }
+}
+
+@keyframes BounceInLeft {
+  0% {
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    opacity: 1;
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    -webkit-transform: translateX(-26px);
+            transform: translateX(-26px);
+  }
+  65% {
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    -webkit-transform: translateX(-13px);
+            transform: translateX(-13px);
+  }
+  82% {
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    -webkit-transform: translateX(-6.5px);
+            transform: translateX(-6.5px);
+  }
+  93% {
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    -webkit-transform: translateX(-4px);
+            transform: translateX(-4px);
+  }
+  25%,
+  55%,
+  75%,
+  87%,
+  98% {
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    -webkit-transform: translateX(15px);
+            transform: translateX(15px);
+  }
+  100% {
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    opacity: 1;
+    -webkit-transform: translateX(7.5px);
+            transform: translateX(7.5px);
+  }
+}
+
+@-webkit-keyframes BounceInRight {
+  0% {
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    opacity: 1;
+    -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    -webkit-transform: translateX(26px);
+            transform: translateX(26px);
+  }
+  65% {
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    -webkit-transform: translateX(13px);
+            transform: translateX(13px);
+  }
+  82% {
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    -webkit-transform: translateX(6.5px);
+            transform: translateX(6.5px);
+  }
+  93% {
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    -webkit-transform: translateX(4px);
+            transform: translateX(4px);
+  }
+  25%,
+  55%,
+  75%,
+  87%,
+  98% {
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    -webkit-transform: translateX(-15px);
+            transform: translateX(-15px);
+  }
+  100% {
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    opacity: 1;
+    -webkit-transform: translateX(-7.5px);
+            transform: translateX(-7.5px);
+  }
+}
+
+@keyframes BounceInRight {
+  0% {
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    opacity: 1;
+    -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    -webkit-transform: translateX(26px);
+            transform: translateX(26px);
+  }
+  65% {
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    -webkit-transform: translateX(13px);
+            transform: translateX(13px);
+  }
+  82% {
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    -webkit-transform: translateX(6.5px);
+            transform: translateX(6.5px);
+  }
+  93% {
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    -webkit-transform: translateX(4px);
+            transform: translateX(4px);
+  }
+  25%,
+  55%,
+  75%,
+  87%,
+  98% {
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    -webkit-transform: translateX(-15px);
+            transform: translateX(-15px);
+  }
+  100% {
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    opacity: 1;
+    -webkit-transform: translateX(-7.5px);
+            transform: translateX(-7.5px);
+  }
+}
+
 .homepage-container {
   width: 100vw;
   height: 100vh;
@@ -88,6 +342,8 @@ section > div {
   height: 100%;
   -webkit-clip-path: polygon(0% 0%, 100% 0%, 90% 50%, 100% 100%, 0 100%);
   clip-path: polygon(0% 0%, 100% 0%, 90% 50%, 100% 100%, 0 100%);
+  -webkit-animation: BounceInLeft 2s ease-in 0s 1 normal forwards;
+          animation: BounceInLeft 2s ease-in 0s 1 normal forwards;
 }
 
 .homepage-container .item-two {
@@ -102,6 +358,8 @@ section > div {
   height: 100%;
   -webkit-clip-path: polygon(10% 0, 100% 0%, 100% 100%, 10% 100%, 0 50%);
   clip-path: polygon(10% 0, 100% 0%, 100% 100%, 10% 100%, 0 50%);
+  -webkit-animation: BounceInRight 2s ease-in 0s 1 normal forwards;
+          animation: BounceInRight 2s ease-in 0s 1 normal forwards;
 }
 
 .homepage-container .item-three {
@@ -116,6 +374,8 @@ section > div {
   height: 100%;
   -webkit-clip-path: polygon(0% 0%, 100% 0%, 90% 50%, 100% 100%, 0 100%);
   clip-path: polygon(0% 0%, 100% 0%, 90% 50%, 100% 100%, 0 100%);
+  -webkit-animation: BounceInLeft 2s ease-in 0s 1 normal forwards;
+          animation: BounceInLeft 2s ease-in 0s 1 normal forwards;
 }
 
 .homepage-container .item-four {
@@ -130,5 +390,7 @@ section > div {
   height: 100%;
   -webkit-clip-path: polygon(10% 0, 100% 0%, 100% 100%, 10% 100%, 0 50%);
   clip-path: polygon(10% 0, 100% 0%, 100% 100%, 10% 100%, 0 50%);
+  -webkit-animation: BounceInRight 2s ease-in 0s 1 normal forwards;
+          animation: BounceInRight 2s ease-in 0s 1 normal forwards;
 }
 /*# sourceMappingURL=scrolling.css.map */
