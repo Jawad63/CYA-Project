@@ -1,3 +1,21 @@
+// navbar :
+document.getElementById('openMenu').addEventListener('click', toggleMenu)
+document.getElementById('closeMenu').addEventListener('click', toggleMenu)
+var isClose = true;
+function toggleMenu(e) {
+    e.preventDefault();
+    if(isClose) {
+        document.body.classList += "navbar-menu-open"
+    } else {
+        document.body.classList.remove("navbar-menu-open")
+    }
+    isClose = !isClose;
+}
+
+
+
+// Skeleton slide vertical and horizontal: 
+
 function horizontalify() {
     const sections = document.getElementsByTagName("section");
     let index = 0;
@@ -72,4 +90,5 @@ function horizontalify() {
     };
   }
   
-  addEventListener("load", horizontalify);
+
+addEventListener("load", horizontalify);
