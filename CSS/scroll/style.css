@@ -635,6 +635,12 @@ section > div {
           animation: BounceInRight 2s ease-in 0s 1 normal forwards;
 }
 
+body {
+  font-family: 'Source Sans Pro',Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+}
+
 #timeline {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -727,16 +733,19 @@ section > div {
   position: relative;
   z-index: 1;
   text-align: center;
-  margin: 0 1.618em;
-  top: 55%;
+  top: 60%;
+  left: 17%;
+  width: 350px;
   opacity: 0;
+  font-size: 1rem;
 }
 
-.tl-content h1 {
-  font-family: 'Pathway Gothic One',Helvetica Neue,Helvetica,Arial,sans-serif;
-  text-transform: uppercase;
-  color: #1779cf;
-  font-size: 1.44rem;
+.tl-content p {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  color: white;
+  font-size: 1rem;
   font-weight: normal;
 }
 
@@ -752,7 +761,6 @@ section > div {
 }
 
 .tl-year p {
-  font-family: 'Pathway Gothic One',Helvetica Neue,Helvetica,Arial,sans-serif;
   font-size: 1.728rem;
   line-height: 0;
 }
@@ -773,5 +781,6 @@ section > div {
   transition: filter 0.5s ease, -webkit-filter 0.5s ease;
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
+  background-image: url("../../images/dummy pic.jpg");
 }
 /*# sourceMappingURL=style.css.map */
