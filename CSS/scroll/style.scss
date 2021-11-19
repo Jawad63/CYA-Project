@@ -98,9 +98,7 @@ a {
     width: 40px;
   }
 }
-p {
-  line-height: 1.8;
-}
+
 
 .page-container {
   background: $white;
@@ -272,11 +270,15 @@ p {
 html,
 body,
 main,
-section,
-div {
+section {
  margin: 0;
  padding: 0;
- width: 100vw;
+}
+
+.horizontal {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
 }
 
 main {
@@ -462,83 +464,6 @@ section > div {
 
 //*    HOMEPAGE (2)    *//
 
-.homepage-container {
- width: 100vw;
- height: 100vh;
- display: grid;
- grid-template-columns: 1fr 2fr 2fr 0fr 2fr 2fr 1fr;
- grid-template-rows: 2fr 2fr 2fr 0.5fr 2fr 2fr 2fr;
- grid-column-gap: 0px;
- grid-row-gap: 0px;
- margin: 0 auto;
-
- [class^="item-"] {
-   position: relative;
-   overflow: hidden;
-  }
-
- [class^="pillar-"] {
-   position: absolute;
-   overflow: hidden;
-  }
-
- .item-one {
-   grid-area: 2 / 2 / 4 / 4; 
-   margin-left: 1.4rem;
-   background-color: blue;
-   width: 100%;
-   height: 100%;
-   -webkit-clip-path: polygon(0% 0%, 90% 0, 100% 50%, 90% 100%, 0 100%, 0 50%);
-   clip-path: polygon(0% 0%, 90% 0, 100% 50%, 90% 100%, 0 100%, 0 50%);
-   animation: BounceInLeft 2s ease-in 0s 1 normal forwards;
-  }
-
- .item-two { 
-   grid-area: 2 / 5 / 4 / 7; 
-   background-color: blue;
-   margin-right: 1.4rem;
-   width: 100%;
-   height: 100%;
-   -webkit-clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 100%, 0 100%, 10% 50%);
-   clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 100%, 0 100%, 10% 50%);
-   animation: BounceInRight 2s ease-in 0s 1 normal forwards;
-  }
-
- .item-three { 
-   grid-area: 5 / 2 / 7 / 4; 
-   margin-left: 1.4rem;
-   background-color: blue;
-   width: 100%;
-   height: 100%;
-   -webkit-clip-path: polygon(0% 0%, 90% 0, 100% 50%, 90% 100%, 0 100%, 0 50%);
-   clip-path: polygon(0% 0%, 90% 0, 100% 50%, 90% 100%, 0 100%, 0 50%);
-   animation: BounceInLeft 2s ease-in 0s 1 normal forwards;
-  }
-
- .item-four { 
-   grid-area: 5 / 5 / 7 / 7;
-   background-color: blue; 
-   margin-right: 1.4rem;
-   width: 100%;
-   height: 100%;
-   -webkit-clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 100%, 0 100%, 10% 50%);
-   clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 100%, 0 100%, 10% 50%);
-   animation: BounceInRight 2s ease-in 0s 1 normal forwards;
-  }
-
-}
-
-
-//*  END  HOMEPAGE (2)    *//
-
-//*    SECTION 1    *//
-
-body {
-  font-family: 'Source Sans Pro',Helvetica Neue,Helvetica,Arial,sans-serif; 
-  font-size: 16px;
-  line-height: 1.75;
-}
-
 #timeline {
   display: flex;
   background-color: #031625;
@@ -654,5 +579,70 @@ body {
   filter: grayscale(100%);
   background-image: url("../../images/dummy\ pic.jpg");
 }
+
+
+
+//*  END  HOMEPAGE (2)    *//
+
+//*    SECTION 1    *//
+
+
+
+
+.container-section-one {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  max-width: 100%;
+
+
+  .title-section-one {
+      background-color: white;
+      padding: 7rem;
+      grid-area: 2 / 1 / 7 / 3;
+      z-index: 3;
+  }
+
+  .image-section-one {
+      grid-area: 1 / 2 / 9 / 11;
+      background-color: yellow;
+      padding: 7rem;
+  }
+
+  .shape-section-one {
+      grid-area: 1 / 7 / 12 / 12;
+      background-color: blue;
+      padding: 7rem;
+      -webkit-clip-path: polygon(0 100%, 75% 45%, 75% 0, 100% 0, 100% 100%);
+      clip-path: polygon(0 100%, 75% 45%, 75% 0, 100% 0, 100% 100%);
+      
+  }
+
+  .text-one {
+      grid-area: 9 / 2 / 12 / 5;
+      background-color: green;
+      padding: 7rem;
+      margin: 1rem;
+  }
+
+  .text-two {
+      grid-area: 9 / 5 / 12 / 8;
+      background-color: red;
+      padding: 7rem;
+      margin: 1rem;
+      z-index: 3;
+  }
+
+  .text-three {
+      grid-area: 9 / 8 / 12 / 11;
+      background-color: hotpink;
+      padding: 7rem;
+      margin: 1rem;
+      z-index: 3;
+  }
+}
+
 
 
