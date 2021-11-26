@@ -300,7 +300,7 @@ section > div {
   display: inline-block;
   height: 100vh;
   color: #ffffff;
-  background-color: #000000;
+  background-color: grey;
   font-size: 10vh;
   text-align: center;
   line-height: 100vh;
@@ -563,7 +563,7 @@ section > div {
   border-bottom: 1px solid #fff;
   
   p {
-    font-size: 1.728rem;
+    font-size: 1.3rem;
     line-height: 0;
   }
 }
@@ -599,50 +599,102 @@ section > div {
 
 
   .title-section-one {
-      background-color: white;
-      padding: 7rem;
-      grid-area: 2 / 1 / 7 / 3;
-      z-index: 3;
+    background-color: white;
+    padding: 7rem;
+    grid-area: 2 / 1 / 7 / 3;
+    z-index: 3;
   }
 
   .image-section-one {
-      grid-area: 1 / 2 / 9 / 11;
-      background-color: yellow;
-      padding: 7rem;
+    grid-area: 1 / 2 / 9 / 11;
+    padding: 7rem;
+    background-color: darkslategrey;
   }
 
   .shape-section-one {
-      grid-area: 1 / 7 / 12 / 12;
-      background-color: blue;
-      padding: 7rem;
-      -webkit-clip-path: polygon(0 100%, 75% 45%, 75% 0, 100% 0, 100% 100%);
-      clip-path: polygon(0 100%, 75% 45%, 75% 0, 100% 0, 100% 100%);
+    grid-area: 1 / 7 / 12 / 12;
+    background-color: #e9d8a6;
+    padding: 7rem;
+    -webkit-clip-path: polygon(0 100%, 75% 45%, 75% 0, 100% 0, 100% 100%);
+    clip-path: polygon(0 100%, 75% 45%, 75% 0, 100% 0, 100% 100%);
       
   }
 
   .text-one {
-      grid-area: 9 / 2 / 12 / 5;
-      background-color: green;
-      padding: 7rem;
-      margin: 1rem;
+    grid-area: 9 / 2 / 12 / 5;
+    background-color: green;
+    padding: 7rem;
+    margin: 1rem 1rem 1rem 0;
+    position: relative;
+    
+
+    .titles-section-one {
+      position: absolute;
+      top: 0%;
+      left: 0%;
+      color: yellow;
+      z-index: 999999999999999;
+    }
   }
 
   .text-two {
-      grid-area: 9 / 5 / 12 / 8;
-      background-color: red;
-      padding: 7rem;
-      margin: 1rem;
-      z-index: 3;
+    grid-area: 9 / 5 / 12 / 8;
+    background-color: red;
+    padding: 7rem;
+    margin: 1rem 1rem 1rem 0;
+    z-index: 3;
   }
 
   .text-three {
-      grid-area: 9 / 8 / 12 / 11;
-      background-color: hotpink;
-      padding: 7rem;
-      margin: 1rem;
-      z-index: 3;
+    grid-area: 9 / 8 / 12 / 11;
+    background-color: hotpink;
+    padding: 7rem;
+    margin: 1rem 1rem 1rem 0;
+    z-index: 3;
   }
 }
 
 
+//*    END SECTION 1    *//
+
+
+//*    SECTION 2   *//
+
+.container-section-two {
+  display: grid;
+  background-color: grey;
+  height: 100vh;
+  width: 100vw;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+  .shape-text-area-section-two {
+    -webkit-clip-path: polygon(89% 0, 100% 0%, 100% 75%, 100% 100%, 67% 100%, 47% 100%, 0 100%);
+    clip-path: polygon(89% 0, 100% 0%, 100% 75%, 100% 100%,67% 100%, 47% 100%, 0 100%);
+    padding: 7rem;
+    grid-area: 1 / 5 / 12 / 12; 
+    background-color: #e9d8a6;
+  }
+
+  .weird-shape-section-two {
+    -webkit-clip-path: polygon(0 0, 67% 0, 0 67%);
+    clip-path: polygon(0 0, 67% 0, 0 67%);
+    padding: 7rem;
+    grid-area: 1 / 1 / 7 / 4;
+    background-color: #e9d8a6;
+  }
+
+  .image-area-section-two {
+    padding: 12rem;
+    background-color: white;
+    grid-area: 2 / 2 / 9 / 9;
+  }
+
+  .text-area-section-two {
+    grid-area: 5 / 9 / 12 / 12;
+    padding: 7rem;
+    background-color: white;
+    z-index: 2;
+  }
+}
 
