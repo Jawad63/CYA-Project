@@ -7,6 +7,8 @@
 
     <link rel="stylesheet" href="./CSS/scroll/style.css">
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <title>scrolling</title>
   </head>
   <body>
@@ -138,36 +140,39 @@
 
         <div class="container-section-one horizontal">
 
-          <div class="title-section-one">
+          <div data-aos="fade-down-right" data-aos-duration="4000" class="title-section-one">
             <h3 class="big-title-section-one">Im a title</h3>
           </div>
 
-          <div class="image-section-one"></div>
+          <div data-aos="fade-down-right" data-aos-duration="4000" class="image-section-one">
+            <img class="section-one-image" src="./images/dummy pic.jpg" alt="">
+          </div>
 
           <div class="shape-section-one"></div>
 
-          <div class="text-one">
+          <div data-aos="fade-down-right" data-aos-duration="4000" class="text-one">
             <h3 class="small-title-section-one">Im a title</h3>
             <p class="text-section-one">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, quidem repellendus fugit dolorem dicta magni iure repellat nemo eos in, temporibus doloribus nulla, blanditiis enim consequatur sapiente dolore animi totam. Earum corrupti est ipsum porro illo repudiandae eos harum, omnis explicabo voluptates aliquam?</p>
           </div>
 
-          <div class="text-two">
+          <div data-aos="fade-down-right" data-aos-duration="4000" class="text-two">
             <h3 class="small-title-section-one">Im a title</h3>
             <p class="text-section-one">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, quidem repellendus fugit dolorem dicta magni iure repellat nemo eos in, temporibus doloribus nulla, blanditiis enim consequatur sapiente dolore animi totam. Earum corrupti est ipsum porro illo repudiandae eos harum, omnis explicabo voluptates aliquam?</p>
           </div>
 
-          <div class="text-three">
+          <div data-aos="fade-down-right" data-aos-duration="4000" class="text-three">
             <h3 class="small-title-section-one">Im a title</h3>
             <p class="text-section-one">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, quidem repellendus fugit dolorem dicta magni iure repellat nemo eos in, temporibus doloribus nulla, blanditiis enim consequatur sapiente dolore animi totam. Earum corrupti est ipsum porro illo repudiandae eos harum, omnis explicabo voluptates aliquam?</p>
           </div>
-
         </div>
 
         <div class="horizontal container-section-two">
 
           <div class="shape-text-area-section-two"></div>
 
-          <div class="image-area-section-two"></div>
+          <div class="image-area-section-two">
+            <img class="section-two-image" src="./images/dummy pic.jpg" alt="">
+          </div>
 
           <div class="text-area-section-two">
             <h3 class="title-text-area-section-two">I am a title</h3>
@@ -188,7 +193,9 @@
 
           </div>
 
-          <div class="text-area-section-three"></div>
+          <div class="image-area-section-three">
+            <img class="section-three-image" src="./images/dummy pic.jpg" alt="">
+          </div>
 
         </div>
 
@@ -205,9 +212,16 @@
       </section>
 
     </main>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init( {
+         duration: 4000,
+         once: true,
+      });
+    </script>
 
-
-
+   
     <script src="./JS/Babel/babel.js"></script>
     <script src="./JS/Babel/script.js"></script>
 

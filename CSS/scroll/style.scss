@@ -472,6 +472,33 @@ section > div {
 }
 
 
+@keyframes hoverPop {
+  0%, 100% { transform: scale(1);}
+  33% { transform: scale(1.02);}
+  66% { transform: scale(.99);}
+}
+
+@keyframes hover-one {
+  0.00% { transform: translateY(7px) translateX(7px) }
+  16.67% { transform: translateY(-7px) translateX(-8px) }
+  33.33% { transform: translateY(2px) translateX(7px) }
+  50.00% { transform: translateY(7px) translateX(-7px) }
+  66.67% { transform: translateY(-1px) translateX(5px) }
+  83.33% { transform: translateY(-7px) translateX(-7px) }
+  100.00% { transform: translateY(7px) translateX(7px) }
+}
+
+@keyframes hover-two {
+  0.00% { transform: translateY(-7px) translateX(-7px) }
+  16.67% { transform: translateY(3px) translateX(-5px) }
+  33.33% { transform: translateY(13px) translateX(-6px) }
+  50.00% { transform: translateY(-7px) translateX(7px) }
+  66.67% { transform: translateY(7px) translateX(-4px) }
+  83.33% { transform: translateY(-1px) translateX(7px) }
+  100.00% { transform: translateY(-7px) translateX(-7px) }
+}
+
+
  
 //* ANIMATION EFFECTS **//
 
@@ -630,11 +657,60 @@ section > div {
     grid-area: 1 / 2 / 9 / 11;
     padding: 7rem;
     background-color: darkslategrey;
-    background-size: cover;
-    background-position: center center;
-    transition: filter 0.5s ease;
-    filter: grayscale(100%);
-    background-image: url("../../images/dummy\ pic.jpg");
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    
+
+
+    .section-one-image {
+      background-size: cover;
+      background-position: center center;
+      transition: filter 0.5s ease;
+      filter: grayscale(100%);
+      position: absolute;
+      left: 0%;
+      top: 0%;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      box-shadow: 2px 2px 4px 0px rgba(10,12,15,0.27);
+      box-shadow: 0px 0px 30px 0px rgba(10,12,15,0.27);
+    }
+
+    &::before, &::after {
+      background-image: linear-gradient(-180deg, #5EA3DB 0%, #0078d4 97%);
+      content: '';
+      height: 100%;
+      position: absolute;
+      left: 0%; top: 0%;
+      transition: all .2s;
+      transition-delay: .2s;
+      transform: translateY(0px) translateX(0px);
+      width: 100%;
+      z-index: -1;
+      }
+
+
+    &::after {
+      background-image: linear-gradient(0deg, #e9d8a6 0%, hsl(45, 70%, 71%) 97%);
+    }
+
+
+    &:hover{
+      animation-name: hoverPop;
+      animation-duration: .4s;
+      -moz-animation-direction: forward;
+      
+      &::before {
+      animation: hover-two 3s .4s linear infinite;
+      transform: translateY(-7px) translateX(-7px);
+      }
+      &::after {
+      animation: hover-one 3s .4s linear infinite reverse;
+      transform: translateY(7px) translateX(7px);
+      }
+    }
   }
 
   .shape-section-one {
@@ -761,8 +837,59 @@ section > div {
     background-position: center center;
     transition: filter 0.5s ease;
     filter: grayscale(100%);
-    background-image: url("../../images/dummy\ pic.jpg");
     z-index: 1;
+
+    .section-two-image {
+      background-size: cover;
+      background-position: center center;
+      transition: filter 0.5s ease;
+      position: absolute;
+      left: 0%;
+      top: 0%;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      box-shadow: 2px 2px 4px 0px rgba(10,12,15,0.27);
+      box-shadow: 0px 0px 30px 0px rgba(10,12,15,0.27);
+    }
+
+    &::before, &::after {
+      background-image: linear-gradient(-180deg, #5EA3DB 0%, #0078d4 97%);
+      content: '';
+      height: 100%;
+      position: absolute;
+      left: 0%; top: 0%;
+      transition: all .2s;
+      transition-delay: .2s;
+      transform: translateY(0px) translateX(0px);
+      width: 100%;
+      z-index: -1;
+    }
+
+
+    &::after {
+      background-image: linear-gradient(0deg, #e9d8a6 0%, hsl(45, 70%, 71%) 97%);
+    }
+
+
+    &:hover{
+      animation-name: hoverPop;
+      animation-duration: .4s;
+      -moz-animation-direction: forward;
+      
+      &::before {
+      animation: hover-two 3s .4s linear infinite;
+      transform: translateY(-7px) translateX(-7px);
+      }
+      &::after {
+      animation: hover-one 3s .4s linear infinite reverse;
+      transform: translateY(7px) translateX(7px);
+      }
+    }
+
+
+
+    
   }
 
   .text-area-section-two {
@@ -796,6 +923,8 @@ section > div {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  height: 100vh;
+  width: 100vw;
 
 
   .shape-section-three {
@@ -818,14 +947,62 @@ section > div {
     }
   }
 
-  .text-area-section-three {
+  .image-area-section-three {
     background-color: whitesmoke;
     grid-area: 2 / 6 / 11 / 11;
     background-size: cover;
     background-position: center center;
     transition: filter 0.5s ease;
-    filter: grayscale(100%);
-    background-image: url("../../images/dummy\ pic.jpg");
+    position: relative;
+
+
+    .section-three-image {
+      background-size: cover;
+      background-position: center center;
+      transition: filter 0.5s ease;
+      left: 0%;
+      top: 0%;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      box-shadow: 2px 2px 4px 0px rgba(10,12,15,0.27);
+      box-shadow: 0px 0px 30px 0px rgba(10,12,15,0.27);
+    }
+
+    &::before, &::after {
+      background-image: linear-gradient(-180deg, #5EA3DB 0%, #0078d4 97%);
+      content: '';
+      height: 100%;
+      position: absolute;
+      left: 0%; top: 0%;
+      transition: all .2s;
+      transition-delay: .2s;
+      transform: translateY(0px) translateX(0px);
+      width: 100%;
+      z-index: -1;
+    }
+
+
+    &::after {
+      background-image: linear-gradient(0deg, #e9d8a6 0%, hsl(45, 70%, 71%) 97%);
+    }
+
+
+    &:hover{
+      animation-name: hoverPop;
+      animation-duration: .4s;
+      -moz-animation-direction: forward;
+      
+      &::before {
+      animation: hover-two 3s .4s linear infinite;
+      transform: translateY(-7px) translateX(-7px);
+      }
+      &::after {
+      animation: hover-one 3s .4s linear infinite reverse;
+      transform: translateY(7px) translateX(7px);
+      }
+    }
   }
 }
 
@@ -873,3 +1050,9 @@ section > div {
 
 
 //*    END CONTACT PAGE    *//
+
+
+body[data-aos-duration='4000'] [data-aos],
+[data-aos][data-aos][data-aos-duration='4000'] {
+  transition-duration: 4000ms;
+}
