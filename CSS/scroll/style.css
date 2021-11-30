@@ -557,36 +557,6 @@ section > div {
   }
 }
 
-@-webkit-keyframes hoverPop {
-  0%, 100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  33% {
-    -webkit-transform: scale(1.02);
-            transform: scale(1.02);
-  }
-  66% {
-    -webkit-transform: scale(0.99);
-            transform: scale(0.99);
-  }
-}
-
-@keyframes hoverPop {
-  0%, 100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  33% {
-    -webkit-transform: scale(1.02);
-            transform: scale(1.02);
-  }
-  66% {
-    -webkit-transform: scale(0.99);
-            transform: scale(0.99);
-  }
-}
-
 @-webkit-keyframes hover-one {
   0.00% {
     -webkit-transform: translateY(7px) translateX(7px);
@@ -947,14 +917,6 @@ section > div {
   background-image: linear-gradient(0deg, #e9d8a6 0%, #e9cf81 97%);
 }
 
-.container-section-one .image-section-one:hover {
-  -webkit-animation-name: hoverPop;
-          animation-name: hoverPop;
-  -webkit-animation-duration: .4s;
-          animation-duration: .4s;
-  -moz-animation-direction: forward;
-}
-
 .container-section-one .image-section-one:hover::before {
   -webkit-animation: hover-two 3s .4s linear infinite;
           animation: hover-two 3s .4s linear infinite;
@@ -1112,8 +1074,6 @@ section > div {
   transition: -webkit-filter 0.5s ease;
   transition: filter 0.5s ease;
   transition: filter 0.5s ease, -webkit-filter 0.5s ease;
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
   z-index: 1;
 }
 
@@ -1158,14 +1118,6 @@ section > div {
 .container-section-two .image-area-section-two::after {
   background-image: -webkit-gradient(linear, left bottom, left top, from(#e9d8a6), color-stop(97%, #e9cf81));
   background-image: linear-gradient(0deg, #e9d8a6 0%, #e9cf81 97%);
-}
-
-.container-section-two .image-area-section-two:hover {
-  -webkit-animation-name: hoverPop;
-          animation-name: hoverPop;
-  -webkit-animation-duration: .4s;
-          animation-duration: .4s;
-  -moz-animation-direction: forward;
 }
 
 .container-section-two .image-area-section-two:hover::before {
@@ -1297,14 +1249,6 @@ section > div {
 .container-section-three .image-area-section-three::after {
   background-image: -webkit-gradient(linear, left bottom, left top, from(#e9d8a6), color-stop(97%, #e9cf81));
   background-image: linear-gradient(0deg, #e9d8a6 0%, #e9cf81 97%);
-}
-
-.container-section-three .image-area-section-three:hover {
-  -webkit-animation-name: hoverPop;
-          animation-name: hoverPop;
-  -webkit-animation-duration: .4s;
-          animation-duration: .4s;
-  -moz-animation-direction: forward;
 }
 
 .container-section-three .image-area-section-three:hover::before {

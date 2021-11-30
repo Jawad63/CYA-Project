@@ -472,11 +472,6 @@ section > div {
 }
 
 
-@keyframes hoverPop {
-  0%, 100% { transform: scale(1);}
-  33% { transform: scale(1.02);}
-  66% { transform: scale(.99);}
-}
 
 @keyframes hover-one {
   0.00% { transform: translateY(7px) translateX(7px) }
@@ -698,10 +693,6 @@ section > div {
 
 
     &:hover{
-      animation-name: hoverPop;
-      animation-duration: .4s;
-      -moz-animation-direction: forward;
-      
       &::before {
       animation: hover-two 3s .4s linear infinite;
       transform: translateY(-7px) translateX(-7px);
@@ -836,7 +827,6 @@ section > div {
     background-size: cover;
     background-position: center center;
     transition: filter 0.5s ease;
-    filter: grayscale(100%);
     z-index: 1;
 
     .section-two-image {
@@ -864,7 +854,7 @@ section > div {
       transform: translateY(0px) translateX(0px);
       width: 100%;
       z-index: -1;
-    }
+      }
 
 
     &::after {
@@ -873,10 +863,6 @@ section > div {
 
 
     &:hover{
-      animation-name: hoverPop;
-      animation-duration: .4s;
-      -moz-animation-direction: forward;
-      
       &::before {
       animation: hover-two 3s .4s linear infinite;
       transform: translateY(-7px) translateX(-7px);
@@ -990,10 +976,6 @@ section > div {
 
 
     &:hover{
-      animation-name: hoverPop;
-      animation-duration: .4s;
-      -moz-animation-direction: forward;
-      
       &::before {
       animation: hover-two 3s .4s linear infinite;
       transform: translateY(-7px) translateX(-7px);
@@ -1024,8 +1006,6 @@ section > div {
     -webkit-clip-path: polygon(0% 0%, 50% 0, 100% 100%, 100% 100%, 75% 100%, 10% 100%, 0 100%);
     clip-path: polygon(0% 0%, 50% 0, 100% 100%, 100% 100%, 75% 100%, 10% 100%, 0 100%);
   }
-
-
 }
 
 
