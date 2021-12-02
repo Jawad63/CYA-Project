@@ -286,7 +286,8 @@ section > div {
   display: inline-block;
   height: 100vh;
   color: #ffffff;
-  background: white;
+  background: #8b8b8b;
+  background: linear-gradient(117deg, #8b8b8b 0%, #a2a2a2 7%, #aaaaaa 12%, #b3b3b3 27%, #bebebe 43%, #cbcbcb 57%, #d8d8d8 69%, #e1e1e1 76%, #ebebeb 86%, #f8f8f8 94%, white 100%);
   text-align: center;
 }
 

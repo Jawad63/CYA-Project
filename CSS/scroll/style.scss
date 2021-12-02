@@ -301,7 +301,8 @@ section > div {
   display: inline-block;
   height: 100vh;
   color: #ffffff;
-  background: rgb(255,255,255);
+  background: rgb(139,139,139);
+  background: linear-gradient(117deg, rgba(139,139,139,1) 0%, rgba(162,162,162,1) 7%, rgba(170,170,170,1) 12%, rgba(179,179,179,1) 27%, rgba(190,190,190,1) 43%, rgba(203,203,203,1) 57%, rgba(216,216,216,1) 69%, rgba(225,225,225,1) 76%, rgba(235,235,235,1) 86%, rgba(248,248,248,1) 94%, rgba(255,255,255,1) 100%);
   text-align: center;
 }
 
