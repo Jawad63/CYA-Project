@@ -858,7 +858,7 @@ section > div {
     padding: 7rem;
     grid-area: 1 / 5 / 12 / 12; 
     background: rgb(233,216,166);
-    background: linear-gradient(74deg, rgba(233,216,166,1) 55%, rgba(255,220,118,1) 100%);
+    background: linear-gradient(240deg, rgba(233,216,166,1) 73%, rgba(255,255,255,1) 90%);
     z-index: 2;
   }
 
@@ -1067,7 +1067,7 @@ section > div {
     grid-area: 1 / 1 / 12 / 9;
     padding: 7rem;
     background: rgb(233,216,166);
-    background: linear-gradient(10deg, rgba(233,216,166,1) 73%, rgba(255,255,255,1) 90%);
+    background: linear-gradient(12deg, rgba(233,216,166,1) 73%, rgba(255,255,255,1) 90%);
     -webkit-clip-path: polygon(0% 0%, 50% 0, 100% 100%, 100% 100%, 75% 100%, 10% 100%, 0 100%);
     clip-path: polygon(0% 0%, 50% 0, 100% 100%, 100% 100%, 75% 100%, 10% 100%, 0 100%);
   }
