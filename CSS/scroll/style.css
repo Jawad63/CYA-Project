@@ -841,7 +841,8 @@ section > div {
   background: #090979;
   background: -webkit-gradient(linear, left top, right top, color-stop(21%, #090979), to(#0097ff));
   background: linear-gradient(90deg, #090979 21%, #0097ff 100%);
-  padding: 7rem;
+  padding: 6rem;
+  margin-left: 10px;
   -ms-grid-row: 2;
   -ms-grid-row-span: 5;
   -ms-grid-column: 1;
@@ -855,9 +856,10 @@ section > div {
 
 .container-section-one .title-section-one .big-title-section-one {
   position: absolute;
-  top: 35%;
-  left: 25%;
+  top: 34%;
+  left: 10%;
   color: #e9d8a6;
+  font-size: 1.3rem;
 }
 
 .container-section-one .image-section-one {
@@ -976,6 +978,7 @@ section > div {
   position: absolute;
   top: 20%;
   left: 0%;
+  font-size: 1.2rem;
 }
 
 .container-section-one .text-two {
