@@ -61,10 +61,6 @@ a[href]:hover::after {
   display: block;
   background: rgba(0, 0, 0, 0.05);
   position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
 }
 
 .section {
@@ -841,8 +837,8 @@ section > div {
   background: #090979;
   background: -webkit-gradient(linear, left top, right top, color-stop(21%, #090979), to(#0097ff));
   background: linear-gradient(90deg, #090979 21%, #0097ff 100%);
-  padding: 6rem;
-  margin-left: 10px;
+  padding: 7rem;
+  margin: 30px;
   -ms-grid-row: 2;
   -ms-grid-row-span: 5;
   -ms-grid-column: 1;
@@ -968,17 +964,18 @@ section > div {
 
 .container-section-one .text-one .small-title-section-one {
   position: absolute;
-  top: 0%;
+  top: -7%;
   left: 35%;
   color: #e9d8a6;
+  font-size: 1.8rem;
   z-index: 999999999999999;
 }
 
 .container-section-one .text-one .text-section-one {
   position: absolute;
-  top: 20%;
+  top: 23%;
   left: 0%;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .container-section-one .text-two {
@@ -1000,16 +997,18 @@ section > div {
 
 .container-section-one .text-two .small-title-section-one {
   position: absolute;
-  top: 0%;
+  top: -7%;
   left: 35%;
   color: #e9d8a6;
+  font-size: 1.8rem;
   z-index: 999999999999999;
 }
 
 .container-section-one .text-two .text-section-one {
   position: absolute;
-  top: 20%;
+  top: 23%;
   left: 0%;
+  font-size: 1rem;
 }
 
 .container-section-one .text-three {
@@ -1031,16 +1030,18 @@ section > div {
 
 .container-section-one .text-three .small-title-section-one {
   position: absolute;
-  top: 0%;
+  top: -7%;
   left: 35%;
   color: #e9d8a6;
+  font-size: 1.8rem;
   z-index: 999999999999999;
 }
 
 .container-section-one .text-three .text-section-one {
   position: absolute;
-  top: 20%;
+  top: 23%;
   left: 0%;
+  font-size: 1rem;
 }
 
 .container-section-two {

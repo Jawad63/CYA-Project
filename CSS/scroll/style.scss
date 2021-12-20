@@ -111,10 +111,6 @@ a {
     display: block;
     background: rgba($black, 0.05);
     position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
   }
 }
 .section {
@@ -638,8 +634,8 @@ section > div {
     background: rgb(9,9,121);
     background: linear-gradient(90deg, rgba(9,9,121,1) 21%, rgba(0,151,255,1) 100%);
     
-    padding: 6rem;
-    margin-left: 10px;
+    padding: 7rem;
+    margin: 30px;
     grid-area: 2 / 1 / 7 / 3;
     z-index: 3;
     position: relative;
@@ -753,17 +749,18 @@ section > div {
     
     .small-title-section-one {
       position: absolute;
-      top: 0%;
+      top: -7%;
       left: 35%;
       color: #e9d8a6;
+      font-size: 1.8rem;
       z-index: 999999999999999;
     }
 
     .text-section-one {
       position: absolute;
-      top: 20%;
+      top: 23%;
       left: 0%;
-      font-size: 1.2rem;
+      font-size: 1rem;
     }
 
 
@@ -793,16 +790,18 @@ section > div {
 
     .small-title-section-one {
       position: absolute;
-      top: 0%;
+      top: -7%;
       left: 35%;
       color: #e9d8a6;
+      font-size: 1.8rem;
       z-index: 999999999999999;
     }
 
     .text-section-one {
       position: absolute;
-      top: 20%;
+      top: 23%;
       left: 0%;
+      font-size: 1rem;
     }
   }
 
@@ -828,16 +827,18 @@ section > div {
 
     .small-title-section-one {
       position: absolute;
-      top: 0%;
+      top: -7%;
       left: 35%;
       color: #e9d8a6;
+      font-size: 1.8rem;
       z-index: 999999999999999;
     }
 
     .text-section-one {
       position: absolute;
-      top: 20%;
+      top: 23%;
       left: 0%;
+      font-size: 1rem;
     }
   }
 }
