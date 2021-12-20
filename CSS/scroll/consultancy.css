@@ -1357,3 +1357,33 @@ body[data-aos-duration='4000'] [data-aos],
   text-transform: uppercase;
 }
 
+.holder {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr) ;
+}
+
+.row {
+  grid-area: 0/0/0/0;
+}
+
+.image__holder {
+  padding: 2rem;
+}
+
+.image__ {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.text__container {
+  padding: 2rem;
+}
+
+.text__holder {
+  color: black;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: left;
+  padding: 1.5rem;
+}
+
