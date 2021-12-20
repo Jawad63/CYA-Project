@@ -1061,7 +1061,7 @@ section > div {
   -ms-grid-column-span: 7;
   grid-area: 1 / 5 / 12 / 12;
   background: #e9d8a6;
-  background: linear-gradient(240deg, #e9d8a6 73%, white 90%);
+  background: linear-gradient(74deg, #e9d8a6 55%, #ffdc76 100%);
   z-index: 2;
 }
 
@@ -1196,8 +1196,9 @@ section > div {
   -ms-grid-column: 1;
   -ms-grid-column-span: 4;
   grid-area: 1 / 1 / 12 / 5;
-  background: #e9d8a6;
-  background: linear-gradient(117deg, #e9d8a6 80%, white 100%);
+  background: #ffdc76;
+  background: -webkit-gradient(linear, left top, right top, from(#ffdc76), color-stop(55%, #e9d8a6));
+  background: linear-gradient(90deg, #ffdc76 0%, #e9d8a6 55%);
   position: relative;
 }
 
@@ -1303,8 +1304,9 @@ section > div {
   -ms-grid-column-span: 8;
   grid-area: 1 / 1 / 12 / 9;
   padding: 7rem;
-  background: #e9d8a6;
-  background: linear-gradient(12deg, #e9d8a6 73%, white 90%);
+  background: #ffdc76;
+  background: -webkit-gradient(linear, left top, right top, from(#ffdc76), color-stop(30%, #e9d8a6));
+  background: linear-gradient(90deg, #ffdc76 0%, #e9d8a6 30%);
   -webkit-clip-path: polygon(0% 0%, 50% 0, 100% 100%, 100% 100%, 75% 100%, 10% 100%, 0 100%);
   clip-path: polygon(0% 0%, 50% 0, 100% 100%, 100% 100%, 75% 100%, 10% 100%, 0 100%);
 }
