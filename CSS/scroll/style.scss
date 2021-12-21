@@ -255,7 +255,7 @@ a {
       right: 0;
       top: 0;
       bottom: 0;
-      z-index: -2;
+      z-index: -1000;
     }
   }
 }
@@ -505,12 +505,22 @@ section > div {
   grid-row-gap: 0px;
 
 }
-.shape{
+
+.logo {
+  height: 500px;
+  background-size: cover;
+  z-index: 2;
+  width: 500px;
+  grid-area: 3 / 3 / 4 / 4;
+}
+
+.shape {
   grid-area: 4 / 1 / 6 / 6;
   padding: 7rem;
   -webkit-clip-path: polygon(50% 73%, 67% 66%, 100% 86%, 100% 100%, 53% 100%, 0 100%, 0 86%, 34% 66%);
   clip-path: polygon(50% 73%, 67% 66%, 100% 86%, 100% 100%, 53% 100%, 0 100%, 0 86%, 34% 66%);
   background-color: grey;
+  z-index: 3000;
 }
 //*    HOMEPAGE (2)    *//
 
@@ -653,7 +663,7 @@ section > div {
     background: linear-gradient(90deg, rgba(9,9,121,1) 21%, rgba(0,151,255,1) 100%);
     
     padding: 7rem;
-    margin: 30px;
+    margin: 50px;
     grid-area: 2 / 1 / 7 / 3;
     z-index: 3;
     position: relative;
@@ -714,7 +724,7 @@ section > div {
       transform: translateY(0px) translateX(0px);
       width: 100%;
       z-index: -1;
-      }
+    }
 
 
     &::after {
@@ -741,7 +751,6 @@ section > div {
     padding: 7rem;
     -webkit-clip-path: polygon(0 100%, 75% 45%, 75% 0, 100% 0, 100% 100%);
     clip-path: polygon(0 100%, 75% 45%, 75% 0, 100% 0, 100% 100%);
-      
   }
 
   .text-one {
@@ -781,9 +790,6 @@ section > div {
       margin: 2rem;
       font-size: 1rem;
     }
-
-
-
   }
 
   .text-two {
@@ -819,7 +825,7 @@ section > div {
     background: rgb(9,9,121);
     background: linear-gradient(90deg, rgba(9,9,121,1) 21%, rgba(0,151,255,1) 100%);    
     padding: 7rem;
-    margin: 1rem 1rem 1rem 0;
+    margin: 1rem 0 1rem 0;
     z-index: 3;
     box-shadow:
     13.1px 13.1px 5px rgba(0, 0, 0, 0.027),
@@ -948,10 +954,6 @@ section > div {
       transform: translateY(7px) translateX(7px);
       }
     }
-
-
-
-    
   }
 
   .text-area-section-two {
@@ -1085,6 +1087,7 @@ section > div {
     clip-path: polygon(0% 0%, 50% 0, 100% 100%, 100% 100%, 75% 100%, 10% 100%, 0 100%);
   }
 }
+
 
 
 
