@@ -1387,3 +1387,24 @@ body[data-aos-duration='4000'] [data-aos],
   padding: 1.5rem;
 }
 
+section {
+  border: 2px solid black;
+}
+
+.mid__section {
+  background-color: black;
+}
+
+.mid_text_holder {
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: left;
+  padding: 2rem;
+}
+
+.small_title {
+  font-size: 40px;
+  font-weight: 600;
+
+}
