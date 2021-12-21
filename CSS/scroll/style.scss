@@ -508,15 +508,14 @@ section > div {
 
 .logo {
   height: 500px;
-  background-size: cover;
   z-index: 2;
   width: 500px;
-  grid-area: 3 / 3 / 4 / 4;
+  opacity: 0.2;
+  grid-area: 3 / 3 / 3 / 4;
 }
 
 .shape {
-  grid-area: 4 / 1 / 6 / 6;
-  padding: 7rem;
+  grid-area: 3 / 1 / 6 / 6;
   -webkit-clip-path: polygon(50% 73%, 67% 66%, 100% 86%, 100% 100%, 53% 100%, 0 100%, 0 86%, 34% 66%);
   clip-path: polygon(50% 73%, 67% 66%, 100% 86%, 100% 100%, 53% 100%, 0 100%, 0 86%, 34% 66%);
   background-color: grey;
