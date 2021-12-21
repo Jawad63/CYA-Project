@@ -690,14 +690,14 @@ section > div {
 }
 
 .logo {
-  height: 500px;
+  height: 550px;
   z-index: 2;
-  width: 500px;
-  opacity: 0.2;
+  width: 550px;
   -ms-grid-row: 3;
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
   grid-area: 3 / 3 / 3 / 4;
+  margin-right: 20px;
 }
 
 .shape {
@@ -710,6 +710,7 @@ section > div {
   clip-path: polygon(50% 73%, 67% 66%, 100% 86%, 100% 100%, 53% 100%, 0 100%, 0 86%, 34% 66%);
   background-color: grey;
   z-index: 3000;
+  border: 2px solid gold;
 }
 
 #timeline {
