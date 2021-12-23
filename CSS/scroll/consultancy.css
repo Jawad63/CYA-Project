@@ -9,9 +9,11 @@
 
 html {
   font-size: 100%;
+  height: 100%;
 }
 
 body {
+  height: 100%;
   margin: 0;
   font-size: 14px;
   font-family: "Montserrat", serif;
@@ -1380,23 +1382,21 @@ body[data-aos-duration='4000'] [data-aos],
 }
 
 .text__holder {
-  color: black;
+  color: white;
   font-size: 18px;
   font-weight: 500;
   text-align: left;
   padding: 1.5rem;
-}
-
-section {
-  border: 2px solid black;
+  background-color: black;
+  opacity: 70%;
 }
 
 .mid__section {
-  background-color: black;
+  background-color: white;
 }
 
 .mid_text_holder {
-  color: white;
+  color: black;
   font-size: 18px;
   font-weight: 500;
   text-align: left;
@@ -1406,5 +1406,14 @@ section {
 .small_title {
   font-size: 40px;
   font-weight: 600;
-
 }
+
+.parallax {
+  background-image: url(/images/parallax.jpg);
+  min-height: 100%; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
