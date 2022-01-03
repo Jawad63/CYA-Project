@@ -50,6 +50,61 @@ $grey-shades: #f7f7f9;
 }
 
 
+
+// button mixin
+@mixin button-border-effect($color: #ccc, $hover: black, $width: 2px, $vertical: top, $horizontal: left, $duration: 0.25s) {
+  box-shadow: inset 0 0 0 $width $color;
+  color: $color;
+  transition: color $duration $duration/3;
+  position: relative;
+  
+  &::before,
+  &::after {
+    border: 0 solid transparent;
+    box-sizing: border-box;
+    content: '';
+    pointer-events: none;
+    position: absolute;
+    width: 0; height: 0;
+    
+    #{$vertical}: 0; 
+    #{$horizontal}: 0;
+  }
+
+  &::before {
+    $h-side: if($horizontal == 'left', 'right', 'left');
+    
+    border-#{$vertical}-width: $width;
+    border-#{$h-side}-width: $width;
+  }
+  
+  &::after {
+    $v-side: if($vertical == 'top', 'bottom', 'top');
+    
+    border-#{$v-side}-width: $width;
+    border-#{$horizontal}-width: $width;
+  }
+  
+  &:hover {
+    color: $hover;
+    
+    &::before,
+    &::after {
+      border-color: $hover;
+      transition: border-color 0s, width $duration, height $duration;
+      width: 100%;
+      height: 100%;
+    }
+    
+    &::before { transition-delay: 0s, 0s, $duration; }
+    
+    &::after { transition-delay: 0s, $duration, 0s; }
+  }
+}
+
+
+
+// button end mixin
 * {
   &::before,
   &::after {
@@ -109,7 +164,6 @@ a {
   &::after {
     content: '';
     display: block;
-    background: rgba($black, 0.05);
   }
 }
 .section {
@@ -1118,9 +1172,6 @@ section > div {
 
 
 
-
-
-
 //*    END CONTACT PAGE    *//
 
 
@@ -1135,3 +1186,209 @@ body[data-aos-duration='4000'] [data-aos],
 
 
 
+
+
+
+
+    // BEGIN CONSULTANCY CSS/
+
+
+.consultancy-container {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.grid-consultancy {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  overflow: hidden;
+  z-index: 2;
+}
+
+
+.item-1 {
+  background-color: #b1b1b1;
+  grid-area: 1 / 1 / 8 / 6;
+  z-index: 2;
+  -webkit-clip-path: polygon(0 0, 0% 100%, 100% 0);
+  clip-path: polygon(0 0, 0% 100%, 100% 0); 
+}
+
+.item-2 {
+  background-color: #b1b1b1;
+  grid-area: 6 / 8 / 12 / 12;
+  z-index: 2;
+  -webkit-clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+  clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+}
+
+.video-grid {
+  grid-area: 1 / 1 / 11 / 11;
+  z-index: -1;
+  background-size: cover;
+}
+
+#myVideo{
+  position: absolute;
+  top: 50%; 
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  min-width: 100%; 
+  min-height: 100%; 
+  width: auto; 
+  height: auto;
+  z-index: -1; 
+  overflow: hidden;
+}
+
+
+.title-consultancy {
+  font-size: 4rem;
+  grid-area: 2 / 3 / 6 / 6;
+  z-index: 2;
+  color: white;
+}
+
+.consultancy-text {
+  font-size: 1.2rem;
+  color: white;
+  z-index: 2;
+  grid-area: 6 / 3 / 7 / 7;
+}
+
+.draw-border {
+  @include button-border-effect(white, #ffe593, 4px, bottom, right);
+}
+
+.draw-border-black {
+  @include button-border-effect(black, #ffe593, 4px, bottom, right);
+}
+.draw-border-two {
+  @include button-border-effect(white, #ffe593, 0px);
+}
+
+.draw-border-three {
+  @include button-border-effect(black, #ffe593, 0px);
+}
+
+
+.button-consultancy {
+  background: none;
+  grid-area: 7 / 3 / 7 / 5;
+  border: none;
+  cursor: pointer;
+  line-height: 1.5;
+  font: 700 1.2rem 'Roboto Slab', sans-serif;
+  padding: 1em 0.4em;
+  letter-spacing: 0.05rem;
+  text-align: center;
+  &:focus { outline: 2px dotted #55d7dc; }
+}
+
+
+.grid-consultancy-two {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  overflow: hidden;
+  z-index: -1;
+  background-color: white;
+}
+
+
+.item-4 {
+  -webkit-clip-path: polygon(100% 0, 0 0, 100% 100%);
+  clip-path: polygon(100% 0, 0 0, 100% 100%);
+  background-color: #b1b1b1;
+  grid-area: 6 / 12 / 1 / 8;
+}
+
+.item-5 {
+  -webkit-clip-path: polygon(0 0, 0 100%, 99% 100%);
+  clip-path: polygon(0 0, 0 100%, 99% 100%);
+  background-color: #b1b1b1;
+  grid-area: 12 / 5 / 5 / 1;
+}
+
+.title-consultancy-black {
+  font-size: 4rem;
+  grid-area: 3 / 7 / 5 / 10;
+  z-index: 2;
+  color: black;
+}
+
+.consultancy-text-black {
+  font-size: 1.2rem;
+  color: black;
+  z-index: 2;
+  grid-area: 5 / 7 / 9 / 11;
+}
+
+.button-consultancy-black {
+  background: none;
+  grid-area: 9 / 9 / 9 / 7;
+  border: none;
+  cursor: pointer;
+  line-height: 1.5;
+  font: 700 1.2rem 'Roboto Slab', sans-serif;
+  padding: 1em 0.4em;
+  letter-spacing: 0.05rem;
+  text-align: center;
+  &:focus { outline: 2px dotted #55d7dc; }
+}
+
+
+.image-consultancy {
+  grid-area: 2 / 1 / 4 / 7;
+  padding-left: 1.2rem;
+  width: 90%;
+}
+
+
+.item-6 {
+  -webkit-clip-path: polygon(0 0, 36% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(0 0, 36% 0, 100% 100%, 0% 100%);
+  background-color: #b1b1b1;
+  grid-area: 1 / 1 / 12 / 12;
+}
+
+
+.title-consultancy-three {
+  font-size: 4rem;
+  grid-area: 2 / 2 / 6 / 6;
+  z-index: 2;
+  color: black;
+}
+
+.consultancy-text-three {
+  font-size: 1.2rem;
+  color: black;
+  z-index: 2;
+  grid-area: 6 / 2 / 7 / 6;
+}
+
+.button-consultancy-three {
+  background: none;
+  grid-area: 7 / 2 / 7 / 4;
+  border: none;
+  cursor: pointer;
+  line-height: 1.5;
+  font: 700 1.2rem 'Roboto Slab', sans-serif;
+  padding: 1em 0.4em;
+  letter-spacing: 0.05rem;
+  text-align: center;
+  &:focus { outline: 2px dotted #55d7dc; }
+}
+
+.image-consultancy-two {
+  grid-area: 3 / 6 / 5 / 11;
+  width: 100%;
+  z-index: 1;
+}
